@@ -393,8 +393,6 @@ p {
 
     display: flex;
     justify-content: flex-end;
-    padding-top: 8px;
-    padding-right: 8px;
 
     width: 528px;
     height: 581px;
@@ -407,6 +405,12 @@ p {
 }
 
 .modal-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top: 14px;
+    margin-right: 14px;
     width: 30px;
     height: 30px;
     border-color: rgba(0, 0, 0, 0.1);
@@ -854,8 +858,16 @@ border-radius: 4px;
     fill: var(--accent-color);
 } 
 
+.form {
+    width: 100%;
+    padding: 40px;
+    margin-right: auto;
+    margin-left: auto;
+}
 .form-p {
-    margin-top: 40px;
+    display: inline-block;
+    min-width: 450px;
+    margin-bottom: 12px;
     
 
     font-weight: bold;
@@ -864,3 +876,66 @@ border-radius: 4px;
     text-align: center;
     color: var(--title-text-color);
 }
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.form-label {
+    margin-bottom: 4px;
+
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+
+    color: var(--primary-text-color)
+}
+
+.form-comment {
+    margin-bottom: 20px;
+    padding: 12px 16px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+
+    color: rgba(117, 117, 117, 0.5);
+    border: 1px solid rgba(33, 33, 33, 0.2);
+box-sizing: border-box;
+border-radius: 4px;
+    resize: none;
+}
+
+.form-input {
+    padding: 10px 12px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+box-sizing: border-box;
+border-radius: 4px;
+}
+
+.form-btn {
+    display: block;
+    padding: 10px 55px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    
+    background-color: var(--accent-color);
+    color: var(--white-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+border: none;
+}
+
+.form-agreement {
+    margin-bottom: 30px;
+}
+
+.agreement-label {
+    font-size: 14px;
+    line-height: 1.71;
+
+    color: var(--primary-text-color);
+}
+

@@ -186,7 +186,12 @@
 
 <div class="backdrop is-hidden" data-modal>
     <div class="modal">
-        <button class="modal-btn" data-modal-close>&#10006;</button>
+        <button class="modal-btn" data-modal-close>
+            <svg width="18px" height="18px">
+                <use href="./images/icon/symbol-defs.svg#icon-Vector"></use>
+            </svg>
+        </button>
+
         <form class="form">
             <p class="form-p">Оставьте свои данные, мы вам перезвоним</p>
             <div class="form-field">
@@ -204,14 +209,19 @@
                 <input type="email" name="email" id="email" class="form-input">
             </div>
 
-            <label for="comment">Комментарий</label>
-            <textarea name="comment" id="comment" rows="10" placeholder="Введите текст"></textarea>
+            <div class="form-field">
+                <label class="form-label" for="comment">Комментарий</label>
+                <textarea class="form-comment" name="comment" id="comment" rows="7" placeholder="Введите текст"></textarea>
+            </div>
 
-            <input type="checkbox" name="agreement" id="agreement">
-            <label for="agreement">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+            <div class="form-agreement">
+                <input type="checkbox" name="agreement" id="agreement">
+                <label class="agreement-label" for="agreement">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+            </div>
 
-            <button type="submit">Отправить</button>
+            <button type="submit" class="form-btn">Отправить</button>
         </form>
+    <!-- </div> -->
     </div>
 </div>
 <script src="./js/modal.js"></script>
