@@ -550,6 +550,11 @@ color: var(--white-color);
     background-color: var(--accent-color);
 }
 
+.form-subscription {
+    display: flex;
+    align-items: center;
+}
+
 .command {
     width: auto;
     padding-right: 15px;
