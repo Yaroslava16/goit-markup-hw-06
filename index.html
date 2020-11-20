@@ -204,17 +204,32 @@
             <p class="form-p">Оставьте свои данные, мы вам перезвоним</p>
             <div class="form-field">
                 <label for="name" class="form-label">Имя</label>
-                <input type="text" name="name" id="name" class="form-input">
+                <div class="conteiner-form-svg"> 
+                    <input type="text" name="name" id="name" class="form-input">
+                    <svg width="12px" height="12px" class="form-svg">
+                    <use href="./images/icon/symbol-defs.svg#icon-person"></use>
+                    </svg>
+                </div>
             </div>
 
             <div class="form-field">
-                <label for="tel" class="form-label">Телефон</label>
-                <input type="tel" name="tel" id="tel" class="form-input">
+                    <label for="tel" class="form-label">Телефон</label>
+                    <div class="conteiner-form-svg">
+                        <input type="tel" name="tel" id="tel" class="form-input">
+                        <svg width="13px" height="13px" class="form-svg">
+                        <use href="./images/icon/symbol-defs.svg#icon-phone"></use>
+                        </svg>
+                    </div>
             </div>
 
             <div class="form-field">
-                <label for="email" class="form-label">Почта</label>
-                <input type="email" name="email" id="email" class="form-input">
+                    <label for="email" class="form-label">Почта</label>
+                    <div class="conteiner-form-svg">
+                        <input type="email" name="email" id="email" class="form-input">
+                        <svg width="15px" height="12px" class="form-svg">
+                        <use href="./images/icon/symbol-defs.svg#icon-email"></use>
+                        </svg>
+                    </div>
             </div>
 
             <div class="form-field">
@@ -224,7 +239,8 @@
 
             <div class="form-agreement">
                 <input type="checkbox" name="agreement" id="agreement">
-                <label class="agreement-label" for="agreement">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+                <label class="agreement-label" for="agreement">Соглашаюсь с рассылкой и принимаю <a href="" target="_blank" rel="noopener noreferer" class="
+                    contract">Условия договора</a></label>
             </div>
 
             <button type="submit" class="form-btn">Отправить</button>
